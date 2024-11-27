@@ -205,3 +205,50 @@ export const LinkItem = styled.li`
   }
 `;
 
+export const ResponsiveWrapper = styled.div`
+  @media (max-width: 1024px) {
+    ${MainLayout} {
+      grid-template-columns: 1fr;
+    }
+    ${Sidebar} {
+      margin-top: 24px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    ${PageContainer} {
+      padding: 0 16px;
+    }
+    ${HeaderWrapper} {
+      margin-bottom: 16px;
+    }
+    ${ContentArea} {
+      padding: 16px;
+    }
+    ${QuickLinks} {
+      padding: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    ${BreadcrumbNav} {
+      font-size: 12px;
+    }
+    ${Title} {
+      font-size: 18px;
+    }
+    ${MainHeading} {
+      font-size: 16px;
+    }
+    ${SectionTitle} {
+      font-size: 14px;
+    }
+    ${SectionText} {
+      font-size: 13px;
+    }
+    ${LinksContainer} {
+      grid-template-columns: 1fr;
+    }
+  }
+`;
+
